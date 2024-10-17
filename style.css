@@ -1,0 +1,140 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  /*border: 1px red solid*/
+}
+
+li{
+  display: inline-block;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+
+/* Estilos */
+
+
+/* HEADER */
+
+header {
+  max-width: 1920px;
+  width: 100%;
+  height: 25vh;
+}
+
+#header #navBar ul li a{
+  font-style: none;
+  font-size: larger;
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+#navBar{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#navBar__logo--img{
+  width: 100%;
+  display: flex;
+}
+
+.a :hover{
+  cursor: pointer;
+}
+
+li {
+  width: 15em;
+  font-weight: bold;
+  color: black;
+}
+
+
+/* MAIN */
+
+body {
+  max-width: 1920px;
+  width: 100%;
+  background-image: linear-gradient(#D9695F, #F22613);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+li {
+  text-decoration: none;
+}
+
+main{
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+img{
+  size-adjust: 5%;
+}
+
+/* GRID ACTIVIDADES */
+
+.actividades__grid{
+  display: grid;
+  width: 1800px;
+  grid-template-columns: repeat(3, 384px);
+  grid-template-rows: repeat(3, 384px);
+}
+
+/* FOOTER */
+
+footer {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialLinks i{
+  width: 20px;
+  display: block;
+  margin: 10px;
+  display: inline-block;
+  color: white;
+}
+
+.copyright {
+  margin: 5px;
+  font-size: 10px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #eaeaea;
+}
+
+.policy{
+  font-size: 10px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  margin: 5px;
+}
+
+#footer a {
+  text-decoration: none;
+  font-style: none;
+  color: #eaeaea;
+}
