@@ -95,8 +95,19 @@ img{
 .actividades__grid{
   display: grid;
   width: 1800px;
-  grid-template-columns: repeat(3, 384px);
-  grid-template-rows: repeat(3, 384px);
+  height: 800px;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(3, 800px);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+
+.actividades__grid img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 /* FOOTER */
