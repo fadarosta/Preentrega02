@@ -19,9 +19,10 @@ body {
 }
 
 button {
-  background: none;
-  border: none;
-  padding: 0;
+  background: lightgrey;
+  border-radius: 20px gray;
+  padding: 10px;
+  font-size: large;
 }
 
 
@@ -34,6 +35,7 @@ header {
   max-width: 1920px;
   width: 100%;
   height: 25vh;
+  display: flex;
 }
 
 #header #navBar ul li a{
@@ -47,13 +49,13 @@ header {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-#navBar__logo--img{
+.navBar__logo--img{
   width: 100%;
-  display: flex;
 }
 
 .a :hover{
@@ -73,7 +75,7 @@ body {
   max-width: 1920px;
   width: 100%;
   background-image: linear-gradient(#D9695F, #F22613);
-  background-size: 100% 100%;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
@@ -86,29 +88,92 @@ main{
   max-height: 100vh;
 }
 
-img{
-  size-adjust: 5%;
-}
 
-/* GRID ACTIVIDADES */
+/* FLEX ACTIVIDADES */
 
-.actividades__grid{
-  display: grid;
-  width: 1800px;
-  height: 800px;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(3, 800px);
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  justify-content: center;
-}
-
-.actividades__grid img{
+.flex{
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  gap: 20px;
 }
+
+.card{
+  min-width: 480px; 
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex__card1{
+  max-width: 480px;
+  height: 700px;
+  background-image: url(images/talleres_byn.png);
+  background-size: cover;
+}
+
+.flex__card2{
+  max-width: 480px;
+  height: 700px;
+  background-image: url(images/workshop_byn.png);
+  background-size: cover;
+  }
+
+.flex__card3{
+  max-width: 480px;
+  max-height: 700px;
+  background-image: url(images/movimiento_byn.png);
+  background-size: cover;
+  }
+
+.titulo__actividad{
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #eaeaea;
+}
+
+.descripcion__actividad{
+  font-weight: normal;
+  font-size: x-large;
+  color: #eaeaea;
+}
+
+
+/*GRID FORM*/
+
+.form{
+  width: 900px;
+  height: 400px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form__datos{
+  display: flex;
+  flex-direction: column;
+}
+
+.form__txtarea{
+  display: flex;
+  flex-direction: auto;
+}
+
+.form__btn{
+  display: block;
+  background: lightgrey;
+  border-radius: 20px gray;
+  padding: 10px;
+  font-size: large;
+}
+
 
 /* FOOTER */
 
@@ -119,6 +184,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .socialLinks i{
@@ -126,20 +192,23 @@ footer {
   display: block;
   margin: 10px;
   display: inline-block;
-  color: white;
+  color: #eaeaea;
 }
 
 .copyright {
   margin: 5px;
   font-size: 10px;
   font-family: 'Arial', sans-serif;
+  text-align: center;
   line-height: 1.5;
   color: #eaeaea;
+
 }
 
 .policy{
   font-size: 10px;
   font-family: 'Arial', sans-serif;
+  text-align: center;
   line-height: 1.5;
   margin: 5px;
 }
@@ -149,3 +218,5 @@ footer {
   font-style: none;
   color: #eaeaea;
 }
+
+
