@@ -33,7 +33,6 @@ form fieldset{
   background: none;
   font-family: 'Arial', sans-serif;
   font-size: 100%;
-  vertical-align: baseline;
   color: inherit;
   display: block;
 }
@@ -85,6 +84,8 @@ body {
   background-image: linear-gradient(#D9695F, #F22613);
   background-size: auto;
   background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 li {
