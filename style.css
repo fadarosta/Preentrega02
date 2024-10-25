@@ -116,19 +116,48 @@ p{
 }
 
 .main__silueta{
+  width: 480px;
+  height: 700px;
   border-radius: 20px;
 }
 
 .main__map{
+  width: 480px;
+  height: 700px;
   border-radius: 20px;
 }
 
-.div__silueta{
+
+/*FLEX LA CASA*/
+
+.flex__lacasa{
+  width: 100%;
+  height: auto;
   display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+  gap: 20px;
 }
-.div__map{
+
+.lacasa__txt{
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
 }
+
+.lacasa__cont{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
 
 /* FLEX ACTIVIDADES */
 
