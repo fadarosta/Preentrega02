@@ -85,6 +85,7 @@ main{
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -94,21 +95,24 @@ h1{
   font-weight: bold;
   font-size: xx-large;
   color: #eaeaea;
-  display: flex;
 }
 
 h2{
   font-weight: bold;
   font-size: xx-large;
   color: #eaeaea;
-  display: flex;
+}
+
+.h3{
+  font-weight: bold;
+  font-size:x-large;
+  color: #eaeaea;
 }
 
 p{
   font-weight: normal;
   font-size: x-large;
   color: #eaeaea;
-  display: flex;
 }
 
 .main__silueta{
@@ -117,6 +121,13 @@ p{
 
 .main__map{
   border-radius: 20px;
+}
+
+.div__silueta{
+  display: flex;
+}
+.div__map{
+  display: flex;
 }
 
 /* FLEX ACTIVIDADES */
@@ -139,6 +150,7 @@ p{
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  
 }
 
 .flex__card1{
