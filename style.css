@@ -25,6 +25,18 @@ button {
   font-size: large;
 }
 
+form fieldset{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: inherit;
+  display: block;
+}
 
 /* Estilos */
 
