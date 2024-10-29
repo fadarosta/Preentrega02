@@ -38,6 +38,7 @@ form fieldset{
 /* HEADER */
 header {
   max-width: 1920px;
+  min-width: 480px;
   margin: auto;
   width: 100%;
   height: 25vh;
@@ -92,6 +93,7 @@ li {
 /* MAIN */
 body {
   max-width: 1920px;
+  min-width: 480px;
   width: 100%;
   min-height: 100vh;
   align-items: center;
@@ -272,25 +274,25 @@ p{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
+  background-color: transparent;
 }
 
 .flex__card1{
-  max-width: 480px;
+  width: 480px;
   height: 700px;
   background-image: url(images/talleres_byn.png);
   background-size: cover;
 }
 
 .flex__card2{
-  max-width: 480px;
+  width: 480px;
   height: 700px;
   background-image: url(images/workshop_byn.png);
   background-size: cover;
   }
 
 .flex__card3{
-  max-width: 480px;
+  width: 480px;
   max-height: 700px;
   background-image: url(images/movimiento_byn.png);
   background-size: cover;
@@ -313,6 +315,7 @@ p{
 
 footer {
   max-width: 1920px;
+  min-width: 480px;
   width: 100%;
   height: auto;
   display: flex;
